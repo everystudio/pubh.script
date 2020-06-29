@@ -100,6 +100,11 @@ public class CharaControl : MonoBehaviour
         CustomEvent.Trigger(gameObject, "OnStepEnd");
     }
 
+    public void OnAnimationEvent(AnimationEvent _event)
+    {
+        CustomEvent.Trigger(gameObject, _event.stringParameter);
+    }
+
     // Start is called before the first frame update
     void Start()
     {
