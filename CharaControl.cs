@@ -18,6 +18,25 @@ public class CharaControl : MonoBehaviour
 
     void OnEnable()
     {
+
+
+        if(Input.GetButtonDown("a"))
+        {
+
+        }
+        else if(Input.GetButtonDown("b"))
+        {
+
+        }
+        else if(Input.GetButtonUp("a"))
+        {
+            
+        }
+        else if(Input.GetButtonUp("b"))
+        {
+
+        }
+
         EasyTouch.On_SwipeStart += On_SwipeStart;
         EasyTouch.On_Swipe += On_Swipe;
         EasyTouch.On_SwipeEnd += On_SwipeEnd;
